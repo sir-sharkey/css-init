@@ -1,0 +1,19 @@
+{
+  "name": "css-init",
+  "version": "1.0.0",
+  "description": "A modern CSS reset/normalization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsharkey90/css-init.git"
+  },
+  "author": "jsharkey90@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsharkey90/css-init/issues"
+  },
+  "homepage": "https://github.com/jsharkey90/css-init#readme"
+}

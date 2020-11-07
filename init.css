@@ -1,0 +1,200 @@
+/* Reset all HTML elements. */
+a,
+abbr,
+address,
+area,
+article,
+aside,
+audio,
+b,
+base,
+bdi,
+bdo,
+blockquote,
+body,
+br,
+button,
+canvas,
+caption,
+cite,
+code,
+col,
+colgroup,
+data,
+datalist,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+head,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+link,
+main,
+map,
+mark,
+menu,
+meta,
+meter,
+nav,
+noscript,
+object,
+ol,
+optgroup,
+option,
+output,
+p,
+param,
+picture,
+pre,
+progress,
+q,
+rb,
+rp,
+rt,
+rtc,
+ruby,
+s,
+samp,
+script,
+section,
+select,
+slot,
+small,
+source,
+span,
+strong,
+style,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+template,
+textarea,
+tfoot,
+th,
+thead,
+time,
+title,
+tr,
+track,
+u,
+ul,
+var,
+video,
+wbr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set default display value on HTML5 elements for older browser support. */
+article,
+aside,
+audio,
+canvas,
+datalist,
+details,
+dialog,
+embed,
+figcaption,
+figure,
+footer,
+header,
+main,
+meter,
+nav,
+output,
+progress,
+section,
+source,
+summary,
+svg,
+time,
+track,
+video {
+  display: block;
+}
+
+bdi,
+mark,
+rp,
+rt,
+ruby,
+wbr,
+{
+  display: inline;
+}
+
+/* Reset line-height globally within the body. */
+body {
+  line-height: 1;
+}
+
+/* Ensure both links and buttons have a default hover state. */
+a,
+button {
+  cursor: pointer;
+}
+
+/* Remove default list styles. */
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Force [hidden] display for accessibility. */
+[hidden] {
+  display: none;
+}
