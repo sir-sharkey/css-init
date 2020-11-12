@@ -155,50 +155,53 @@ wbr,
   display: inline;
 }
 
-/* Set line-height and box-sizing at body level. */
+// Set line-height and box-sizing at body level.
 body {
   box-sizing: border-box;
   line-height: 1;
+
+  // Set all child elements of body to inherit box-sizing
+  * {
+    box-sizing: border-box;
+  }
 }
 
-/* Set all child elements of body to inherit box-sizing */
+// Set all child elements of body to inherit box-sizing
 body * {
   box-sizing: border-box;
 }
 
-/* Ensure both links and buttons have a default hover state. */
+// Ensure both links and buttons have a default hover state.
 a,
 button {
   cursor: pointer;
 }
 
-/* Remove default list styles. */
+// Remove default list styles.
 ol,
 ul {
   list-style: none;
 }
 
-/* Remove default quote styles */
+// Remove default quote styles
 blockquote,
 q {
   quotes: none;
+
+  &::before,
+  &::after {
+    content: '';
+    content: none;  
+  }
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
-  content: none;
-}
-
-/* Reset default table styles */
+// Reset default table styles
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Force [hidden] display for accessibility. */
+// Force [hidden] display for accessibility.
 [hidden] {
   display: none;
 }

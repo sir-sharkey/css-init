@@ -1,19 +1,33 @@
 {
-  "name": "css-init",
-  "version": "1.0.0",
-  "description": "A modern CSS reset/normalization.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "Jack Sharkey",
+    "email": "jsharkey90@gmail.com",
+    "website": "http://jacksharkey.me"
   },
+  "bugs": {
+    "url": "https://github.com/jsharkey90/css-init/issues"
+  },
+  "description": "A modern CSS reset/normalization.",
+  "homepage": "https://github.com/jsharkey90/css-init#readme",
+  "keywords": [
+    "css",
+    "reset",
+    "normalize"
+  ],
+  "license": "ISC",
+  "main": "init.css",
+  "name": "css-init",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jsharkey90/css-init.git"
   },
-  "author": "jsharkey90@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jsharkey90/css-init/issues"
+  "scripts": {
+    "build": "gulp css"
   },
-  "homepage": "https://github.com/jsharkey90/css-init#readme"
+  "version": "1.0.0",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "gulp": "^4.0.2",
+    "stylelint": "^13.7.2"
+  }
 }
