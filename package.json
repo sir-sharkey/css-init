@@ -35,5 +35,8 @@
   "scripts": {
     "build": "gulp css"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "postcss": "^8.2.4"
+  }
 }
