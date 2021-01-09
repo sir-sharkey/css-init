@@ -30,7 +30,7 @@
   "name": "css-init",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sir-sharkey/css-init.git"
+    "url": "https://github.com/sir-sharkey/css-init.git"
   },
   "scripts": {
     "build": "gulp css"
