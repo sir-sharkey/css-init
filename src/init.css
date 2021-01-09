@@ -171,9 +171,11 @@ html *::after {
 /* Body */
 body {
   line-height: 1;
+  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   text-size-adjust: none;
+  width: 100%;
 }
 
 /* Ensure both links and buttons have a default hover state. */
