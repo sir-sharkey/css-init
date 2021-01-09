@@ -161,7 +161,7 @@ html {
   box-sizing: border-box;
 }
 
-/* Set all child elements of html to inherit box-sizing */
+/* Set all child elements of html to inherit box-sizing. */
 html *,
 html *::before,
 html *::after {
@@ -197,7 +197,7 @@ picture {
   display: block;
 }
 
-/* Remove default quote styles */
+/* Remove default quote styles. */
 blockquote,
 q {
   quotes: none;
@@ -210,7 +210,7 @@ q::after {
   content: none;
 }
 
-/* Reset default table styles */
+/* Reset default table styles. */
 table {
   border-collapse: collapse;
   border-spacing: 0;

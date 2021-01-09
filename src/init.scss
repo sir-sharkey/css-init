@@ -1,4 +1,4 @@
-/* Reset all non-metadata HTML elements. */
+// Reset all non-metadata HTML elements.
 a,
 abbr,
 address,
@@ -116,7 +116,7 @@ wbr {
   vertical-align: baseline;
 }
 
-/* Set default display value to block on non-inline HTML5 elements for older browser support. */
+// Set default display value to block on non-inline HTML5 elements for older browser support.
 article,
 aside,
 audio,
@@ -143,7 +143,7 @@ video {
   display: block;
 }
 
-/* Set default display value to block on inline HTML5 elements for older browser support. */
+// Set default display value to block on inline HTML5 elements for older browser support.
 bdi,
 mark,
 rp,
@@ -160,7 +160,7 @@ wbr,
 html {
   box-sizing: border-box;
 
-  // Set all child elements of html to inherit box-sizing
+  // Set all child elements of html to inherit box-sizing.
   *,
   *::before,
   *::after {
@@ -197,7 +197,7 @@ picture {
   display: block;
 }
 
-// Remove default quote styles
+// Remove default quote styles.
 blockquote,
 q {
   quotes: none;
@@ -208,7 +208,7 @@ q {
   }
 }
 
-// Reset default table styles
+// Reset default table styles.
 table {
   border-collapse: collapse;
   border-spacing: 0;
