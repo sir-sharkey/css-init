@@ -160,6 +160,7 @@ wbr,
 html {
   box-sizing: border-box;
   line-height: 1;
+  text-rendering: optimizeSpeed;
 }
 
 /* Set all child elements of html to inherit box-sizing */
