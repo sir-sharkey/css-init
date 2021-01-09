@@ -163,8 +163,10 @@ html {
 }
 
 /* Set all child elements of html to inherit box-sizing */
-html * {
-  box-sizing: border-box;
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
 }
 
 /* Ensure both links and buttons have a default hover state. */
@@ -179,6 +181,13 @@ ul {
   list-style: none;
 }
 
+/* Set the display value of images to blick and set max-width to prevent side-scroll. */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 /* Remove default quote styles */
 blockquote,
 q {
@@ -189,7 +198,6 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
   content: none;
 }
 

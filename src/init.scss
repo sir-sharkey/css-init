@@ -162,8 +162,10 @@ html {
   line-height: 1;
 
   // Set all child elements of html to inherit box-sizing
-  * {
-    box-sizing: border-box;
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
 }
 
@@ -179,6 +181,13 @@ ul {
   list-style: none;
 }
 
+/* Set the display value of images to blick and set max-width to prevent side-scroll. */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 // Remove default quote styles
 blockquote,
 q {
@@ -186,7 +195,6 @@ q {
 
   &::before,
   &::after {
-    content: '';
     content: none;
   }
 }
