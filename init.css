@@ -107,11 +107,12 @@ ul,
 var,
 video,
 wbr {
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -155,14 +156,14 @@ wbr,
   display: inline;
 }
 
-/* Set line-height and box-sizing at body level. */
-body {
+/* Set line-height and box-sizing at html level. */
+html {
   box-sizing: border-box;
   line-height: 1;
 }
 
-/* Set all child elements of body to inherit box-sizing */
-body * {
+/* Set all child elements of html to inherit box-sizing */
+html * {
   box-sizing: border-box;
 }
 

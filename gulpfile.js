@@ -1,12 +1,12 @@
-const GulpClient = require("gulp");
+import gulp from 'gulp';
 
 
 gulp.task('css', () => {
-  var plugins = [
+  const plugins = [
     autoprefixer({browsers: ['last 1 version']}),
     cssnano()
   ];
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/init.scss')
     .pipe(postcss(plugins))
-    .pipe(gulp.dest('./dest'));
+    .pipe(gulp.dest('./dist'));
 });
