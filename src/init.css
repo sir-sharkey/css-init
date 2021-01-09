@@ -160,6 +160,7 @@ wbr,
 html {
   box-sizing: border-box;
   line-height: 1;
+  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
 
