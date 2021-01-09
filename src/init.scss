@@ -159,9 +159,6 @@ wbr,
 // Set line-height and box-sizing at html level.
 html {
   box-sizing: border-box;
-  line-height: 1;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
 
   // Set all child elements of html to inherit box-sizing
   *,
@@ -169,6 +166,14 @@ html {
   *::after {
     box-sizing: inherit;
   }
+}
+
+// Body
+body {
+  line-height: 1;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  text-size-adjust: none;
 }
 
 // Ensure both links and buttons have a default hover state.
