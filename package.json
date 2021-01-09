@@ -27,7 +27,7 @@
     "normalize"
   ],
   "license": "ISC",
-  "main": "init.css",
+  "main": "./dist/init.min.css",
   "name": "css-init",
   "repository": {
     "type": "git",
