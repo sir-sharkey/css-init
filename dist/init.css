@@ -1,0 +1,51 @@
+a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canvas,caption,cite,code,col,colgroup,data,datalist,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,input,ins,kbd,label,legend,li,main,map,mark,math,menu,meter,nav,noscript,object,ol,optgroup,option,output,p,param,picture,pre,progress,q,rb,rp,rt,rtc,ruby,s,samp,script,section,select,slot,small,source,span,strong,sub,summary,sup,svg,table,tbody,td,template,textarea,tfoot,th,thead,time,tr,track,u,ul,var,video,wbr{
+  background:none;
+  border:none;
+  font:inherit;
+  font-size:100%;
+  margin:0;
+  padding:0;
+  vertical-align:baseline; }
+
+article,aside,audio,canvas,datalist,details,dialog,embed,figcaption,figure,footer,header,main,meter,nav,output,progress,section,source,summary,svg,track,video{
+  display:block; }
+
+bdi,mark,rp,rt,ruby,time,wbr{
+  display:inline; }
+
+html{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box; }
+  html *,html :after,html :before{
+    -webkit-box-sizing:inherit;
+            box-sizing:inherit; }
+
+body{
+  line-height:1.5;
+  min-height:100vh;
+  scroll-behavior:smooth;
+  text-rendering:optimizeSpeed;
+  -webkit-text-size-adjust:none;
+     -moz-text-size-adjust:none;
+      -ms-text-size-adjust:none;
+          text-size-adjust:none;
+  width:100%; }
+
+a,button,details,label,select{
+  cursor:pointer; }
+
+ol,ul{
+  list-style:none; }
+
+img,picture{
+  max-width:100%;
+  display:block; }
+
+blockquote,q{
+  quotes:none; }
+  blockquote:after,blockquote:before,q:after,q:before{
+    content:none; }
+
+table{
+  border-collapse:collapse;
+  border-spacing:0; }
