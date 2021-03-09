@@ -1,4 +1,5 @@
-// Reset all non-metadata HTML elements.
+// Reset all non-metadata and non-deprecated HTML elements.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 a,
 abbr,
 address,
@@ -58,6 +59,7 @@ li,
 main,
 map,
 mark,
+math,
 menu,
 meter,
 nav,
@@ -91,6 +93,7 @@ strong,
 sub,
 summary,
 sup,
+svg,
 table,
 tbody,
 td,
@@ -108,7 +111,7 @@ var,
 video,
 wbr {
   background: none;
-  border: 0;
+  border: none;
   font: inherit;
   font-size: 100%;
   margin: 0;
@@ -116,7 +119,7 @@ wbr {
   vertical-align: baseline;
 }
 
-// Set default display value to block on non-inline HTML5 elements for older browser support.
+// Set default display value to `block` on block-level/non-inline HTML5 elements for older browser support.
 article,
 aside,
 audio,
@@ -143,12 +146,11 @@ video {
   display: block;
 }
 
-// Set default display value to block on inline HTML5 elements for older browser support.
+// Set default display value to `inline` on inline HTML5 elements for older browser support.
 bdi,
 mark,
 rp,
 rt,
-rtc,
 ruby,
 time,
 wbr,
@@ -156,11 +158,13 @@ wbr,
   display: inline;
 }
 
-// Set line-height and box-sizing at html level.
+// Set box-sizing at html.
+// NOTE: this is the ONLY style that is applied at the HTML level; you should avoid setting styles on this element for Accessibility reasons.
+
 html {
   box-sizing: border-box;
 
-  // Set all child elements of html to inherit box-sizing.
+  // Set all child elements of `html` to inherit box-sizing.
   *,
   *::before,
   *::after {
@@ -170,7 +174,7 @@ html {
 
 // Body
 body {
-  line-height: 1;
+  line-height: 1.5;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -178,9 +182,12 @@ body {
   width: 100%;
 }
 
-// Ensure both links and buttons have a default hover state.
+// Ensure interactive elements have a pointer cursor on hover.
 a,
-button {
+button,
+details,
+label,
+select {
   cursor: pointer;
 }
 
@@ -190,7 +197,7 @@ ul {
   list-style: none;
 }
 
-/* Set the display value of images to blick and set max-width to prevent side-scroll. */
+// Set the display value of images to blick and set max-width to prevent side-scroll.
 img,
 picture {
   max-width: 100%;
