@@ -7,18 +7,18 @@
   "bugs": {
     "url": "https://github.com/sir-sharkey/css-init/issues"
   },
-  "description": "A modern CSS reset/normalization.",
+  "description": "A modern CSS reset/normalization that correctly accounts for HTML5 elements.",
   "devDependencies": {
-    "autoprefixer": "10.2.5",
-    "cssnano": "4.1.10",
-    "gulp": "4.0.2",
-    "gulp-postcss": "9.0.0",
-    "gulp-rename": "2.0.0",
-    "gulp-sass": "4.1.0",
-    "merge-stream": "2.0.0",
-    "postcss": "8.2.7",
-    "stylelint": "13.12.0",
-    "stylelint-config-recommended": "4.0.0"
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "merge-stream": "^2.0.0",
+    "postcss": "^8.2.7",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^4.0.0"
   },
   "homepage": "https://github.com/sir-sharkey/css-init#readme",
   "keywords": [

@@ -158,25 +158,18 @@ wbr,
   display: inline;
 }
 
-// Set box-sizing at html.
+// Set `box-sizing` to `border-box` on all elements.
 // NOTE: this is the ONLY style that is applied at the HTML level; you should avoid setting styles on this element for Accessibility reasons.
-
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-
-  // Set all child elements of `html` to inherit box-sizing.
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
 }
 
 // Body
 body {
   line-height: 1.5;
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   text-size-adjust: none;
   width: 100%;

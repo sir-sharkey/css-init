@@ -13,17 +13,13 @@ article,aside,audio,canvas,datalist,details,dialog,embed,figcaption,figure,foote
 bdi,mark,rp,rt,ruby,time,wbr{
   display:inline; }
 
-html{
+*,:after,:before{
   -webkit-box-sizing:border-box;
           box-sizing:border-box; }
-  html *,html :after,html :before{
-    -webkit-box-sizing:inherit;
-            box-sizing:inherit; }
 
 body{
   line-height:1.5;
   min-height:100vh;
-  scroll-behavior:smooth;
   text-rendering:optimizeSpeed;
   -webkit-text-size-adjust:none;
      -moz-text-size-adjust:none;
