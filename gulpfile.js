@@ -20,7 +20,7 @@ gulp.task('css', () => {
         autoprefixer(),
         cssnano({
           preset: ['default', {
-            normalizeWhitespace: 'true',
+            normalizeWhitespace: true,
           }],
         })
       ]))
@@ -36,7 +36,7 @@ gulp.task('css', () => {
         autoprefixer(),
         cssnano({
           preset: ['default', {
-            normalizeWhitespace: 'false',
+            normalizeWhitespace: false,
           }],
         })
       ]))
