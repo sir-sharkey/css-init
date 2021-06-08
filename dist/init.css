@@ -56,8 +56,9 @@ sup{
   vertical-align:super; }
 
 embed,iframe,img,object,picture,video{
-  max-width:100%;
-  display:block; }
+  display:block;
+  height:auto;
+  max-width:100%; }
 
 blockquote,q{
   quotes:none; }
