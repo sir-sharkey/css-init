@@ -114,6 +114,8 @@ wbr {
   border: none;
   font: inherit;
   font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -170,7 +172,6 @@ wbr,
 body {
   line-height: 1.5;
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
   text-size-adjust: none;
   width: 100%;
 }
@@ -184,15 +185,45 @@ select {
   cursor: pointer;
 }
 
+// Remove default styles on unfocused buttons and selects.
+button,
+select {
+  appearance: none;
+  outline: none;
+}
+
 // Remove default list styles.
 ol,
 ul {
   list-style: none;
 }
 
-// Set the display value of images to blick and set max-width to prevent side-scroll.
+// Old school text styles.
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+}
+
+sub {
+  vertical-align: sub;
+}
+sup {
+  vertical-align: super;
+}
+
+// Set the display and max-width for image/multimedia and embedded content tags to place items on a new line and prevent side-scroll.
+embed,
+iframe,
 img,
-picture {
+object,
+picture,
+video {
   max-width: 100%;
   display: block;
 }
@@ -212,4 +243,9 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+// So this element doesn't disappear (as it is a void / self-closing element).
+hr {
+  border: 1px inset;
 }

@@ -3,6 +3,8 @@ a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canv
   border:none;
   font:inherit;
   font-size:100%;
+  font-style:normal;
+  font-weight:400;
   margin:0;
   padding:0;
   vertical-align:baseline; }
@@ -20,7 +22,6 @@ bdi,mark,rp,rt,ruby,time,wbr{
 body{
   line-height:1.5;
   min-height:100vh;
-  text-rendering:optimizeSpeed;
   -webkit-text-size-adjust:none;
      -moz-text-size-adjust:none;
       -ms-text-size-adjust:none;
@@ -30,10 +31,31 @@ body{
 a,button,details,label,select{
   cursor:pointer; }
 
+button,select{
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+  outline:none; }
+
 ol,ul{
   list-style:none; }
 
-img,picture{
+b{
+  font-weight:700; }
+
+i{
+  font-style:italic; }
+
+code{
+  font-family:monospace; }
+
+sub{
+  vertical-align:sub; }
+
+sup{
+  vertical-align:super; }
+
+embed,iframe,img,object,picture,video{
   max-width:100%;
   display:block; }
 
@@ -45,3 +67,6 @@ blockquote,q{
 table{
   border-collapse:collapse;
   border-spacing:0; }
+
+hr{
+  border:1px inset; }
