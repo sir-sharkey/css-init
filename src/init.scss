@@ -161,7 +161,6 @@ wbr,
 }
 
 // Set `box-sizing` to `border-box` on all elements.
-// NOTE: this is the ONLY style that is applied at the HTML level; you should avoid setting styles on this element for Accessibility reasons.
 *,
 *::before,
 *::after {
