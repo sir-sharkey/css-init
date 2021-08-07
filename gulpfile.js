@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const mergeStream = require('merge-stream');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 function onError(error) {
   console.log(error.message);
