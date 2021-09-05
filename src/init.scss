@@ -1,5 +1,7 @@
+/* ------------------- */
 // Reset all non-metadata and non-deprecated HTML elements.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+/* ------------------- */
 a,
 abbr,
 address,
@@ -44,7 +46,9 @@ h4,
 h5,
 h6,
 header,
-hgroup,
+// hgroup
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup
+// "<hgroup> should not be used because no assistive technology supports it, and as a result it has a detrimental effect on assistance for headings placed within it."
 hr,
 html,
 i,
@@ -109,7 +113,10 @@ u,
 ul,
 var,
 video,
-wbr {
+// wbr
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+// Leaving out `wbr`, as it is only for spacing/formatting.
+ {
   background: none;
   border: none;
   font: inherit;
@@ -121,24 +128,23 @@ wbr {
   vertical-align: baseline;
 }
 
+/* ------------------- */
 // Set default display value to `block` on block-level/non-inline HTML5 elements for older browser support.
+// Leave out `dialog`, should be `none`
+/* ------------------- */
 article,
 aside,
 audio,
 canvas,
-datalist,
 details,
-dialog,
 embed,
 figcaption,
 figure,
 footer,
 header,
 main,
-meter,
 nav,
 output,
-progress,
 section,
 source,
 summary,
@@ -148,35 +154,60 @@ video {
   display: block;
 }
 
-// Set default display value to `inline` on inline HTML5 elements for older browser support.
+/* ------------------- */
+// Set default display value to `inline-block` on inline HTML5 elements for older browser support.
+// Leaving out `wbr`, as it is only for spacing/formatting.
+/* ------------------- */
 bdi,
 mark,
+meter, // Following browser defaults, could go either way on this.
+progress, // Following browser defaults, could go either way
 rp,
 rt,
 ruby,
 time,
-wbr,
  {
-  display: inline;
+  display: inline-block;
 }
 
+/* ------------------- */
+// Hide datalist & dialog elements.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+/* ------------------- */
+datalist,
+// Set dialog to `none` only when it doesn't have the `open` boolean attribute.
+dialog:not([open]) {
+  display: none;
+}
+
+/* ------------------- */
 // Set `box-sizing` to `border-box` on all elements.
+/* ------------------- */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-// Body
+/* ------------------- */
+// Body styles.
+/* ------------------- */
 body {
   // https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns
+  // "Use a minimum value of 1.5 for line-height for main paragraph content."
   line-height: 1.5;
+  // Ensure body stretches full height of window.
   min-height: 100vh;
+  // Prevent smartphone and tablet devices adjusting text size.
   text-size-adjust: none;
+  // Ensure body stretches full width of window.
   width: 100%;
 }
 
+/* ------------------- */
 // Ensure interactive elements have a pointer cursor on hover.
+/* ------------------- */
 a,
 button,
 details,
@@ -185,20 +216,26 @@ select {
   cursor: pointer;
 }
 
+/* ------------------- */
 // Remove default styles on unfocused buttons and selects.
+/* ------------------- */
 button,
 select {
   appearance: none;
   outline: none;
 }
 
+/* ------------------- */
 // Remove default list styles.
+/* ------------------- */
 ol,
 ul {
   list-style: none;
 }
 
-// Old school text styles.
+/* ------------------- */
+// Support old school text styles.
+/* ------------------- */
 b {
   font-weight: bold;
 }
@@ -206,10 +243,15 @@ i {
   font-style: italic;
 }
 
-code {
+// Re-add `monospace` font.
+code,
+kbd,
+pre,
+samp {
   font-family: monospace;
 }
 
+// Reset vertical alignment for subscripts and superscripts, as they have their own respective values.
 sub {
   vertical-align: sub;
 }
@@ -217,7 +259,9 @@ sup {
   vertical-align: super;
 }
 
+/* ------------------- */
 // Set the display and max-width for image/multimedia and embedded content tags to place items on a new line and prevent side-scroll.
+/* ------------------- */
 embed,
 iframe,
 img,
@@ -229,7 +273,9 @@ video {
   max-width: 100%;
 }
 
+/* ------------------- */
 // Remove default quote styles.
+/* ------------------- */
 blockquote,
 q {
   quotes: none;
@@ -240,13 +286,10 @@ q {
   }
 }
 
+/* ------------------- */
 // Reset default table styles.
+/* ------------------- */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-// So this element doesn't disappear (as it is a void / self-closing element).
-hr {
-  border: 1px inset;
 }
