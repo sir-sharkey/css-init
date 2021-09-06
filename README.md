@@ -31,8 +31,8 @@ Only the minimal rules necessary are included, and all rules and declarations ar
 - Accessibility-In-Mind: accessibility was a main focus when creating this package.
 - Does not remove, or mess with in any way, the default focus state styles!!
   - ⚠️ You should _never_ remove/hide/suppress the default focus outline without creating a custom one as well?
-- Sets `font-size` to `100%` and includes note on why this is important.
-- Sets default `line-height` on `body` with accessibility in mind.
+- Sets `font-size` to `100%` and includes a note on why this is important.
+- Sets default `line-height` on `body` and includes a note (and [link](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns)) on why this is important.
 - Ensures that `[hidden]` attribute styles are honored.
 - Ensures that elements that are hidden are done so using `display: none`, as this also removes them from the accessibility tree.
 - Doesn't mess with the user's ability to zoom.
@@ -42,7 +42,7 @@ Only the minimal rules necessary are included, and all rules and declarations ar
 
 - Includes styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), including elements left out in Eric Meyer's OG [Reset CSS](https://meyerweb.com/eric/tools/css/reset/).
 - Correctly resets new HTML5 elements for custom styling, like `<button>` and `<select>`.
-- Correctly styles multimedia elements in a modern format.
+- Correctly styles multimedia elements to reduce the likelihood of unintended side-scroll.
 - Ensures a `pointer` cursor shows on all appropriate interactive elements.
 - Includes modern browser support ([see below](#browser-support)).
 
@@ -114,7 +114,7 @@ import 'reset-css';
 
 ## 💣 Testing
 
-There is an included `tags.html` file intended to act as an example or styleguide page. You can load this file locally, or at [this remote location](https://github.com/sir-sharkey/css-init/blob/main/tags.html), in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
+There is an included `tags.html` file intended to act as an example or styleguide page. You can load this file locally in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
 
 > 📝 **NOTE:** you can use this same file as a generic styleguide or test file once you have added your own theme styles as well, but we recommend creating your own to test additional styles (that are most likely added with classes).
 
