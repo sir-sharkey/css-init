@@ -1,0 +1,195 @@
+/* ------------------- */
+// Reset styles on all non-metadata and non-deprecated HTML elements; this creates consistent and
+// expected behavior in font-styles and spacing of all elements.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+/* ------------------- */
+a,
+abbr,
+// acronym, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym
+address,
+// applet, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/applet
+area,
+article,
+aside,
+audio,
+b,
+// basefont, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont
+bdi,
+bdo,
+// bgsound, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bgsound
+// big, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big
+// blink, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink
+blockquote,
+body,
+br,
+button,
+canvas,
+caption,
+// center, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center
+cite,
+code,
+col,
+colgroup,
+// content, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/content
+data,
+datalist,
+dd,
+del,
+details,
+dfn,
+dialog,
+// dir, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+// font, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font
+form,
+// frame, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame
+// frameset, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+// hgroup ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup
+hr,
+html,
+i,
+iframe,
+// image, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image
+img,
+input,
+ins,
+kbd,
+// keygen, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen
+label,
+legend,
+li,
+main,
+map,
+mark,
+// marquee, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee
+math,
+// menu, ⚠️ Experimental, don't use in production yet.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
+meter,
+// menuitem, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem
+nav,
+// nobr, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr
+// noembed, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed
+// noframes, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noframes
+noscript,
+object,
+ol,
+optgroup,
+option,
+output,
+p,
+param,
+picture,
+// plaintext, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext
+pre,
+progress,
+q,
+// rb, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb
+rp,
+rt,
+// rtc, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc
+ruby,
+s,
+samp,
+// script, 👻 // Doesn't render on the page, so no reason to style it.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+section,
+select,
+// shadow, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow
+slot,
+small,
+source,
+// spacer, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer
+span,
+// strike, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike
+strong,
+sub,
+summary,
+sup,
+svg,
+table,
+tbody,
+td,
+// template, 👻 // Doesn't render on the page, so no reason to style it.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+track,
+// tt, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt
+u,
+ul,
+var,
+video,
+// wbr, 👻 // Doesn't render on the page, so no reason to style it.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+// xmp, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
+ {
+  background: none; // No backgrounds, especially on pesky buttons.
+  border: none; // No borders, most dinstinctly recognized on buttons
+  // and inputs.
+  // Ensuring font property inherits (this is the default behavior).
+  font: inherit;
+  // Resetting all elements to 100%.
+  //📝 Accessibility Note: Setting `font-size` to 100% and NOT a value including
+  // units is incredibly important to allow user's default font-size changes to their browser
+  // preferences to be honored; additionally, it is recommended to use `rem` values in your
+  // authored styles to support zooming correctly.
+  font-size: 100%;
+  // Reset `font-style` to normal on all elements.
+  font-style: normal;
+  // Reset `font-weight` to normal on all elements.
+  font-weight: normal;
+  // Remove `margin` on all elements.
+  margin: 0;
+  // Remove `padding` on all elements.
+  padding: 0;
+  // Position all elements that are positioned inline on the baseline for consistency.
+  vertical-align: baseline;
+}

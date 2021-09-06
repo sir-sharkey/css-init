@@ -1,0 +1,15 @@
+/* ------------------- */
+// Remove default quote styles.
+/* ------------------- */
+blockquote,
+q {
+  // Set `quotes` property to `none` to remove default quote styles added to elements.
+  quotes: none;
+
+  &::before,
+  &::after {
+    // Set `content` property to `none` on pseudo elements to remove quotation characters that
+    // are added before and after the `blockquote` and `q` elements.
+    content: none;
+  }
+}

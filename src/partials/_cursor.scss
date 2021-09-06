@@ -1,0 +1,12 @@
+/* ------------------- */
+// Ensure interactive elements have a pointer cursor on hover.
+/* ------------------- */
+a,
+button,
+details,
+label,
+select {
+  // Set the `cursor` property to a `pointer` (hand with finger pointed) on all clickable,
+  // interactive elements.
+  cursor: pointer;
+}

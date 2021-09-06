@@ -1,0 +1,8 @@
+/* ------------------- */
+// Remove default list styles.
+/* ------------------- */
+ol,
+ul {
+  // Remove the default numbers and bullets respectively from these list types.
+  list-style: none;
+}

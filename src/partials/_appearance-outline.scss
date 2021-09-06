@@ -1,0 +1,10 @@
+/* ------------------- */
+// Remove default appearance and outline styles on unfocused buttons and selects.
+/* ------------------- */
+button,
+select {
+  // Remove the additional background from both as well additional caret styling on the select.
+  appearance: none;
+  // Remove additional visible border on both.
+  outline: none;
+}

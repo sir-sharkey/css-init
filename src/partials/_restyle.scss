@@ -1,0 +1,34 @@
+/* ------------------- */
+// Support old school text styles.
+/* ------------------- */
+// Support classic styles for elements that bear semantic importance and should be used over similar
+// alternatives that do not convey any semantic meaning (the `b` and `i` tags, respectively) and
+// were historicaly used to alter how the text is displayed; modern CSS conventions prefer using
+// CSS styles to affect display instead of relying on these tags.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+strong {
+  font-weight: bold;
+}
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+em {
+  font-style: italic;
+}
+
+// Re-add `monospace` font.
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+}
+
+// Reset vertical alignment for subscripts and superscripts, as they have their own respective
+// values.
+sub {
+  vertical-align: sub;
+}
+sup {
+  vertical-align: super;
+}

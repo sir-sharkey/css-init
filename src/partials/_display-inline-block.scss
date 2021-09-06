@@ -1,0 +1,16 @@
+/* ------------------- */
+// Set default display value to `inline-block` on inline HTML5 elements for older browser support.
+/* ------------------- */
+bdi,
+mark,
+meter, // @TODO Following browser defaults, could go either way.
+progress, // @TODO Following browser defaults, could go either way.
+rp,
+rt,
+ruby,
+time,
+ {
+  // Set `display` property to `inline-block` to ensure elements are displayed at the inline level,
+  // thus making them flow with inline/text content while also have positioning capabilities.
+  display: inline-block;
+}

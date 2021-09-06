@@ -1,0 +1,27 @@
+/* ------------------- */
+// Set default display value to `block` on block-level/non-inline HTML5 elements for older browser
+// support.
+/* ------------------- */
+article,
+aside,
+audio,
+canvas,
+details,
+embed,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+output,
+section,
+source,
+summary,
+svg,
+track,
+video {
+  // Ensure elements are displayed at the block level, thus making them easily distinguished
+  // within the DOM flow and easily positioned.
+  display: block;
+}

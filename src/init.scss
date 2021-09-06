@@ -1,295 +1,34 @@
-/* ------------------- */
-// Reset all non-metadata and non-deprecated HTML elements.
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-/* ------------------- */
-a,
-abbr,
-address,
-area,
-article,
-aside,
-audio,
-b,
-bdi,
-bdo,
-blockquote,
-body,
-br,
-button,
-canvas,
-caption,
-cite,
-code,
-col,
-colgroup,
-data,
-datalist,
-dd,
-del,
-details,
-dfn,
-dialog,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-// hgroup
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup
-// "<hgroup> should not be used because no assistive technology supports it, and as a result it has a detrimental effect on assistance for headings placed within it."
-hr,
-html,
-i,
-iframe,
-img,
-input,
-ins,
-kbd,
-label,
-legend,
-li,
-main,
-map,
-mark,
-math,
-menu,
-meter,
-nav,
-noscript,
-object,
-ol,
-optgroup,
-option,
-output,
-p,
-param,
-picture,
-pre,
-progress,
-q,
-rb,
-rp,
-rt,
-rtc,
-ruby,
-s,
-samp,
-script,
-section,
-select,
-slot,
-small,
-source,
-span,
-strong,
-sub,
-summary,
-sup,
-svg,
-table,
-tbody,
-td,
-template,
-textarea,
-tfoot,
-th,
-thead,
-time,
-tr,
-track,
-u,
-ul,
-var,
-video,
-// wbr
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
-// Leaving out `wbr`, as it is only for spacing/formatting.
- {
-  background: none;
-  border: none;
-  font: inherit;
-  font-size: 100%;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
+// Reset styles on all non-metadata and non-deprecated HTML elements; this creates consistent and
+// expected behavior in font-styles and spacing of all elements.
+@import 'partials/reset';
 
-/* ------------------- */
-// Set default display value to `block` on block-level/non-inline HTML5 elements for older browser support.
-// Leave out `dialog`, should be `none`
-/* ------------------- */
-article,
-aside,
-audio,
-canvas,
-details,
-embed,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-output,
-section,
-source,
-summary,
-svg,
-track,
-video {
-  display: block;
-}
 
-/* ------------------- */
-// Set default display value to `inline-block` on inline HTML5 elements for older browser support.
-// Leaving out `wbr`, as it is only for spacing/formatting.
-/* ------------------- */
-bdi,
-mark,
-meter, // Following browser defaults, could go either way on this.
-progress, // Following browser defaults, could go either way
-rp,
-rt,
-ruby,
-time,
- {
-  display: inline-block;
-}
-
-/* ------------------- */
-// Hide datalist & dialog elements.
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
-/* ------------------- */
-datalist,
-// Set dialog to `none` only when it doesn't have the `open` boolean attribute.
-dialog:not([open]) {
-  display: none;
-}
-
-/* ------------------- */
-// Set `box-sizing` to `border-box` on all elements.
-/* ------------------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* ------------------- */
-// Body styles.
-/* ------------------- */
-body {
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns
-  // "Use a minimum value of 1.5 for line-height for main paragraph content."
-  line-height: 1.5;
-  // Ensure body stretches full height of window.
-  min-height: 100vh;
-  // Prevent smartphone and tablet devices adjusting text size.
-  text-size-adjust: none;
-  // Ensure body stretches full width of window.
-  width: 100%;
-}
-
-/* ------------------- */
+// Remove default appearance and outline styles on unfocused buttons and selects.
+@import 'partials/appearance-outline';
+// Set crucial styles on `body` element that will be inherited by contents.
+@import 'partials/body';
+// // Set `box-sizing` to `border-box` on all elements, including pseudo elements.
+@import 'partials/box-sizing';
 // Ensure interactive elements have a pointer cursor on hover.
-/* ------------------- */
-a,
-button,
-details,
-label,
-select {
-  cursor: pointer;
-}
-
-/* ------------------- */
-// Remove default styles on unfocused buttons and selects.
-/* ------------------- */
-button,
-select {
-  appearance: none;
-  outline: none;
-}
-
-/* ------------------- */
+@import 'partials/cursor';
+// Set default display value to `block` on block-level/non-inline HTML5 elements for older browser
+// support.
+@import 'partials/display-block';
+// Set default display value to `inline-block` on inline HTML5 elements for older browser support.
+@import 'partials/display-inline-block';
+// Ensure elements that should be hidden on-load have `display` property set to `none`.
+// 📝 Accessibility Note: `display-none` MUST be included after `display-block` and
+// `display-inline-block` to ensure that the `[hidden]` attribute styles are honored.
+@import 'partials/display-none';
 // Remove default list styles.
-/* ------------------- */
-ol,
-ul {
-  list-style: none;
-}
-
-/* ------------------- */
-// Support old school text styles.
-/* ------------------- */
-b {
-  font-weight: bold;
-}
-i {
-  font-style: italic;
-}
-
-// Re-add `monospace` font.
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace;
-}
-
-// Reset vertical alignment for subscripts and superscripts, as they have their own respective values.
-sub {
-  vertical-align: sub;
-}
-sup {
-  vertical-align: super;
-}
-
-/* ------------------- */
-// Set the display and max-width for image/multimedia and embedded content tags to place items on a new line and prevent side-scroll.
-/* ------------------- */
-embed,
-iframe,
-img,
-object,
-picture,
-video {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-/* ------------------- */
+@import 'partials/list-styles';
+// Set the display and max-width for image/multimedia and embedded content elements to place items
+// on a new line and prevent side-scroll.
+@import 'partials/multimedia';
 // Remove default quote styles.
-/* ------------------- */
-blockquote,
-q {
-  quotes: none;
-
-  &::before,
-  &::after {
-    content: none;
-  }
-}
-
-/* ------------------- */
+@import 'partials/quotes';
+// Support old school text styles.
+// @TODO This one is up for debate, let's see what the people say...
+@import 'partials/restyle';
 // Reset default table styles.
-/* ------------------- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+@import 'partials/tables';

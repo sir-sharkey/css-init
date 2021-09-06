@@ -1,4 +1,4 @@
-a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canvas,caption,cite,code,col,colgroup,data,datalist,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,html,i,iframe,img,input,ins,kbd,label,legend,li,main,map,mark,math,menu,meter,nav,noscript,object,ol,optgroup,option,output,p,param,picture,pre,progress,q,rb,rp,rt,rtc,ruby,s,samp,script,section,select,slot,small,source,span,strong,sub,summary,sup,svg,table,tbody,td,template,textarea,tfoot,th,thead,time,tr,track,u,ul,var,video{
+a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canvas,caption,cite,code,col,colgroup,data,datalist,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,html,i,iframe,img,input,ins,kbd,label,legend,li,main,map,mark,math,meter,nav,noscript,object,ol,optgroup,option,output,p,param,picture,pre,progress,q,rp,rt,ruby,s,samp,section,select,slot,small,source,span,strong,sub,summary,sup,svg,table,tbody,td,textarea,tfoot,th,thead,time,tr,track,u,ul,var,video{
   background:none;
   border:none;
   font:inherit;
@@ -9,18 +9,11 @@ a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canv
   padding:0;
   vertical-align:baseline;
 }
-article,aside,audio,canvas,details,embed,figcaption,figure,footer,header,main,nav,output,section,source,summary,svg,track,video{
-  display:block;
-}
-bdi,mark,meter,progress,rp,rt,ruby,time{
-  display:inline-block;
-}
-datalist,dialog:not([open]){
-  display:none;
-}
-*,:after,:before{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+button,select{
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+  outline:none;
 }
 body{
   -webkit-text-size-adjust:none;
@@ -31,23 +24,41 @@ body{
   min-height:100vh;
   width:100%;
 }
+*,:after,:before{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+}
 a,button,details,label,select{
   cursor:pointer;
 }
-button,select{
-  -webkit-appearance:none;
-     -moz-appearance:none;
-          appearance:none;
-  outline:none;
+article,aside,audio,canvas,details,embed,figcaption,figure,footer,header,main,nav,output,section,source,summary,svg,track,video{
+  display:block;
+}
+bdi,mark,meter,progress,rp,rt,ruby,time{
+  display:inline-block;
+}
+[hidden],datalist,dialog:not([open]){
+  display:none;
 }
 ol,ul{
   list-style:none;
 }
-b{
+embed,iframe,img,object,picture,video{
+  display:block;
+  height:auto;
+  max-width:100%;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:after,blockquote:before,q:after,q:before{
+  content:none;
+}
+strong{
   font-weight:700;
 }
 
-i{
+em{
   font-style:italic;
 }
 
@@ -61,17 +72,6 @@ sub{
 
 sup{
   vertical-align:super;
-}
-embed,iframe,img,object,picture,video{
-  display:block;
-  height:auto;
-  max-width:100%;
-}
-blockquote,q{
-  quotes:none;
-}
-blockquote:after,blockquote:before,q:after,q:before{
-  content:none;
 }
 table{
   border-collapse:collapse;

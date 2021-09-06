@@ -1,0 +1,12 @@
+/* ------------------- */
+// Reset default table styles.
+/* ------------------- */
+table {
+  // Set table cells borders to be shared.
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
+  border-collapse: collapse;
+  // Set the space between borders to `0` to ensure no gap between borders if for some reason the
+  // style above is not honored.
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing
+  border-spacing: 0;
+}
