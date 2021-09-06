@@ -37,7 +37,7 @@
     "scss reset",
     "scss"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "main": "./dist/init.min.css",
   "name": "css-init",
   "repository": {
@@ -47,5 +47,5 @@
   "scripts": {
     "build": "gulp css"
   },
-  "version": "0.0.7"
+  "version": "1.0.0"
 }
