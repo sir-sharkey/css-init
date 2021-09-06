@@ -86,7 +86,7 @@ $ yarn add css-init
 
 ## 🛠 Usage
 
-> 📝 **Note:** replace "..node-modules" below with the path to your `/node_modules/` directory, or in your desired location.
+> 📝 **NOTE:** replace "..node-modules" below with the path to your `/node_modules/` directory, or in your desired location.
 
 HTML:
 
@@ -111,6 +111,12 @@ Via [webpack](https://webpack.js.org/) and [css-loader](https://github.com/webpa
 ```js
 import 'reset-css';
 ```
+
+## 💣 Testing
+
+There is an included `tags.html` file intended to act as an example or styleguide page. You can load this file locally, or at [this remote location](https://github.com/sir-sharkey/css-init/blob/main/tags.html), in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
+
+> 📝 **NOTE:** you can use this same file as a generic styleguide or test file once you have added your own theme styles as well, but we recommend creating your own to test additional styles (that are most likely added with classes).
 
 ## 👥 GitHub
 
