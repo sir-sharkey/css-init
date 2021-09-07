@@ -119,9 +119,7 @@ import 'reset-css';
 
 There is an included `tags.html` file intended to act as an example page. You can load this file locally in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
 
-> **🚨NOTE:** this file is NOT meant to be accessible (hypocritical, I know...); but it's NOT meant to be a styleguide, rather just a page to view the elements (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌)
-
-> 📝 **NOTE:** you can use this same file as a generic styleguide or test file once you have added your own theme styles as well, but we recommend creating your own to test additional styles (that are most likely added with classes).
+> **🚨NOTE:** this file is NOT meant to be accessible (hypocritical, I know...); but it's NOT meant to be a styleguide, rather just a page to view the elements (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌).
 
 ## 👥 GitHub
 
