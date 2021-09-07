@@ -2,8 +2,8 @@
 
 # A modern CSS reset/normalization.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/v/css-init?color=%23cb0000)](https://www.npmjs.com/package/scss-reset)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/scss-reset)
 [![npm](https://img.shields.io/npm/dw/css-init)](https://www.npmjs.com/package/scss-reset)
 
 A minimal, unopinionated, and accessible CSS reset/normalization that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
@@ -12,7 +12,7 @@ A minimal, unopinionated, and accessible CSS reset/normalization that correctly 
 
 ### 👌 Minimal
 
-Only the minimal rules necessary are included, and all rules and declarations are thoroughly explained in comments; the rules included are the bare minimum required to correctly reset styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) in a manner that does not tamper with the natural accessibility of semantic HTML in an unaltered state.
+> 📝 **NOTE:** A wholehearted attempt has been made to include only the minimal rules necessary, and all rules and declarations are thoroughly explained in comments; the rules included are the bare minimum required to correctly reset styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) in a manner that does not tamper with the natural accessibility of semantic HTML in an unaltered state.
 
 - Nothing included without an explanation or a reason.
 - Legacy conventions in other "resets" and "normalizations" audited and edited/removed.
@@ -21,16 +21,17 @@ Only the minimal rules necessary are included, and all rules and declarations ar
 
 ### 🤫 Unopinionated
 
-- The included rules are _only_ intended to truly "reset" the styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), **NOT** to also add a layer of default styles on top of the reset.
-- These styles are meant to have a true blank slate effect.
+- The included rules are only intended to "reset" the styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), **NOT** to also add a layer of opinionated, 
+default" styles on top of the reset.
+- These styles are meant to have a true blank-slate effect.
 - Meant to be used by developers in projects where themes/default styles are being added on top of the reset.
 - Avoids necessitating an additional complementary stylesheet in order to remove opinionated styles added after using a package like [Normalize](https://necolas.github.io/normalize.css/).
 
 ### ♿️ Accessible
 
 - Accessibility-In-Mind: accessibility was a main focus when creating this package.
-- Does not remove, or mess with in any way, the default focus state styles!!
-  - ⚠️ You should _never_ remove/hide/suppress the default focus outline without creating a custom one as well?
+- Does not remove, or mess with in any way, the default focus state styles!
+  - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline styles without creating a custom one to override it.
 - Sets `font-size` to `100%` and includes a note on why this is important.
 - Sets default `line-height` on `body` and includes a note (and [link](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns)) on why this is important.
 - Ensures that `[hidden]` attribute styles are honored.
@@ -57,11 +58,13 @@ last 2 versions
 
 ## 😞 Why
 
-This package, and included main stylesheet, was born out of years of frustration and sheer disappointment with the evolution of the standard available tools to "reset" or "normalize" your CSS before creating your own styles/theme.
+This package, and included main stylesheet, was born out of years of frustration and disappointment with the evolution of the standard available tools to "reset" or "normalize" your CSS before creating your own styles/theme.
 
-After years of creating a custom `_reset.scss`, `_base.css`, or `_elements.css` partial to complement and layer on top of either [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I got so frustrated I decided to research what other options are out there... surely there has to be a modern, accessible, unopinionated alternative? And here enters my disappointment - while there are some hopeful possibilities based on package names, I couldn't find anything that ticked all the boxes above.
+After years of creating a custom `_reset.scss` partial to fully rest my own styles on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are out there... surely there has to be a modern, accessible, unopinionated alternative? And here enters my disappointment - while there are some hopeful possibilities based on package names, I couldn't find anything that ticked all the boxes above.
 
-So instead, I decided - why not pick and choose the best from all of them, audit what should actually be there, and create one package to rule them all and in the darkness bind them.
+So instead, I decided - why not pick and choose the best from all of them, audit what should actually be there, and create one package to in the darkness bind them.
+
+> 📝 **NOTE:** The goal of this package is to correctly reset/normalize browser-default styles, creating a "blank slate" or "blank canvas" effect for you to then write your own styles on top of. Once you have included these styles, you can then begin writing your own base styles on top of them; it does NOT create a base or default set of styles for you to immediately begin authoring content with - this is left up to you. Happy styling!
 
 ## ⤵️ Install
 
@@ -114,7 +117,9 @@ import 'reset-css';
 
 ## 💣 Testing
 
-There is an included `tags.html` file intended to act as an example or styleguide page. You can load this file locally in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
+There is an included `tags.html` file intended to act as an example page. You can load this file locally in any browser to see how all elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across.
+
+> **🚨NOTE:** this file is NOT meant to be accessible (hypocritical, I know...); but it's NOT meant to be a styleguide, rather just a page to view the elements (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌)
 
 > 📝 **NOTE:** you can use this same file as a generic styleguide or test file once you have added your own theme styles as well, but we recommend creating your own to test additional styles (that are most likely added with classes).
 

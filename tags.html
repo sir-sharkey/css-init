@@ -70,7 +70,7 @@
 
   <figure>
     <img src="https://5ojtv13o4by138ocv258q4xu7h-wpengine.netdna-ssl.com/wp-content/themes/phish/assets/img/logo.png?ver=1.0" alt="phish logo">
-    <figcaption>This is a figcaption inside of a &lt;figure&gt; tag; that's the Phish logo above</figcaption>
+    <figcaption>This is a figcaption inside of a &lt;figure&gt; tag; that's the Phish logo above via an &lt;img&gt; tag</figcaption>
   </figure>
 
   <hr style="border: 1px inset;">
@@ -124,13 +124,9 @@
 
   <q>This is a &lt;q&gt; tag</q><br>
 
-  <rb>This is a &lt;rb&gt; tag</rb><br>
-
   <rp>This is a &lt;rp&gt; tag</rp><br>
 
   <rt>This is a &lt;rt&gt; tag</rt><br>
-
-  <rtc>This is a &lt;rtc&gt; tag</rtc><br>
 
   <ruby>This is a &lt;ruby&gt; tag</ruby><br>
 
@@ -153,8 +149,6 @@
   <u>This is a &lt;u&gt; tag</u><br>
 
   <var>This is a &lt;var&gt; tag</var><br>
-
-  <span>Th<wbr>is<wbr>a<wbr>long<wbr>string<wbr>of<wbr>text<wbr>with<wbr>&lt;wbr<wbr>&gt;<wbr>tags<wbr>separating<wbr>words<wbr>.</span><br><br>
 
   <!-- Section -->
   <p><b>Image and multimedia:</b></p><br><br>
@@ -199,6 +193,7 @@
       media="(min-width: 800px)">
     <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/painted-hand-298-332.jpg" alt="">
   </picture>
+  <span>That is an &lt;picture&gt; tag above, with a &lt;source&gt; and &lt;img&gt; tag inside</span><br>
 
   <span>Skipping the &lt;portal&gt; tag</span><br>
 
@@ -258,8 +253,8 @@
   <!-- Section -->
   <p><b>Table content:</b></p><br>
 
-  <table style="text-align: left;">
-    <caption>Table Caption</caption>
+  <table>
+    <caption>This is a &lt;caption&gt;tag</caption>
     <colgroup>
       <col>
       <col span="2" style="background-color: skyblue;">
@@ -268,36 +263,49 @@
     <thead>
       <tr>
         <th scope="col"></th>
-        <th scope="col" colspan="2">skyblue</th>
-        <th scope="col" colspan="2">peachpuff</th>
+        <th scope="col" colspan="2">This is a &lt;th&gt; tag; skyblue</th>
+        <th scope="col" colspan="2">This is a &lt;th&gt; tag; peachpuff</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Column 1</td>
-        <td>Column 2</td>
-        <td>Column 3</td>
-        <td>Column 4</td>
-        <td>Column 5</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
       </tr>
       <tr>
-        <td>Column 1</td>
-        <td>Column 2</td>
-        <td>Column 3</td>
-        <td>Column 4</td>
-        <td>Column 5</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
       </tr>
       <tr>
-        <td>Column 1</td>
-        <td>Column 2</td>
-        <td>Column 3</td>
-        <td>Column 4</td>
-        <td>Column 5</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
+        <td>This is a &lt;td&gt tag</td>
       </tr>
     </tbody>
-    <tfoot>
-    </tfoot>
+    <tfoot>This is a &lt;tfoot&gt; tag</tfoot>
   </table><br>
+
+  <div>
+    <span>That is an &lt;table&gt; tag above, containing the following tags:</span>
+    <ul>
+      <li>A &lt;caption&gt; tag</li>
+      <li>A &lt;colgroup&gt; tag (to set column groups, and add colors)</li>
+      <li>A &lt;col&gt; tag</li>
+      <li>A &lt;thead&gt; tag</li>
+      <li>A &lt;tr&gt; tag</li>
+      <li>A &lt;th&gt; tag</li>
+      <li>A &lt;tbody&gt; tag</li>
+      <li>A &lt;td&gt; tag</li>
+      <li>A &lt;tfoot&gt; tag</li>
+  </div><br>
 
   <!-- Section -->
   <p><b>Forms:</b></p><br>
