@@ -3,9 +3,6 @@
 // as well as phrasing content.
 /* ------------------- */
 a {
-  // Remove default link coloring, as links were originally intended to only
-  // wrap around text in very basic HTML.
-  color: initial;
   // Remove the default underline that shows up on links.
   text-decoration: none;
   // Alse ensure the default underline is removed when `:hover` state is applied.

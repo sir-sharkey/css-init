@@ -171,9 +171,12 @@ video,
 // xmp, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
  {
-  background: none; // No backgrounds, especially on pesky buttons.
-  border: none; // No borders, most dinstinctly recognized on buttons
-  // and inputs.
+  // No backgrounds, especially on pesky buttons.
+  background: none;
+  // No borders, most dinstinctly recognized on buttons and inputs.
+  border: none;
+  // Reset `color` to default state on all elements.
+  color: initial;
   // Ensuring font property inherits (this is the default behavior).
   font: inherit;
   // Resetting all elements to 100%.
@@ -190,6 +193,11 @@ video,
   margin: 0;
   // Remove `padding` on all elements.
   padding: 0;
+  // `text-decoration` is currently left out of the reset, as there are some demarcating elements
+  // related to inline text semantics that become useles without it, and are generally used less
+  // frequently, and restlyed even less frequently (e.g. `<abbr>, <s>, and <u>`). `text-decoration`
+  // is, however, specifically removed on links/anchor tags (`<a>`) in the `_links.scss` partial.
+  // text-decoraion: none;
   // Position all elements that are positioned inline on the baseline for consistency.
   vertical-align: baseline;
 }

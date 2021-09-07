@@ -32,3 +32,9 @@ sub {
 sup {
   vertical-align: super;
 }
+
+// Re-add size reduction using `font-size` property, as this is a less-arbirtrary value and
+// corresponds with the name of the element.
+small {
+  font-size: small;
+}
