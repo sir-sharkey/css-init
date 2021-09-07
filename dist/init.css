@@ -40,6 +40,12 @@ bdi,mark,meter,progress,rp,rt,ruby,time{
 [hidden],datalist,dialog:not([open]){
   display:none;
 }
+a{
+  color:initial;
+}
+a,a:hover{
+  text-decoration:none;
+}
 ol,ul{
   list-style:none;
 }

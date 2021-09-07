@@ -20,8 +20,11 @@
 // 📝 Accessibility Note: `display-none` MUST be included after `display-block` and
 // `display-inline-block` to ensure that the `[hidden]` attribute styles are honored.
 @import 'partials/display-none';
+// Ensure links do not have a underline on-load or on-hover, as links are used to wrap flow content
+// as well as phrasing content.
+@import 'partials/links';
 // Remove default list styles.
-@import 'partials/list-styles';
+@import 'partials/lists';
 // Set the display and max-width for image/multimedia and embedded content elements to place items
 // on a new line and prevent side-scroll.
 @import 'partials/multimedia';
