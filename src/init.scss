@@ -3,8 +3,8 @@
 @import 'partials/reset';
 
 
-// Remove default appearance and outline styles on unfocused buttons and selects.
-@import 'partials/appearance-outline';
+// Remove default appearance styles on buttons and selects.
+@import 'partials/appearance';
 // Set crucial styles on `body` element that will be inherited by contents.
 @import 'partials/body';
 // // Set `box-sizing` to `border-box` on all elements, including pseudo elements.

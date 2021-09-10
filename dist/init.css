@@ -14,7 +14,6 @@ button,select{
   -webkit-appearance:none;
      -moz-appearance:none;
           appearance:none;
-  outline:none;
 }
 body{
   -webkit-text-size-adjust:none;
