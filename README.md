@@ -42,7 +42,7 @@ A minimal, unopinionated, and accessible CSS reset/normalization that correctly 
 - Correctly resets new HTML5 elements for custom styling, like `<button>` and `<select>`.
 - Correctly styles multimedia elements to reduce the likelihood of unintended side-scroll.
 - Ensures a `pointer` cursor shows on all appropriate interactive elements.
-- Includes modern browser support ([see below](#browser-support)).
+- Includes modern browser support (_see below_).
 
 ## 🏗 Browser Support
 
