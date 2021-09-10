@@ -109,7 +109,7 @@ CSS:
 Via [webpack](https://webpack.js.org/) and [css-loader](https://github.com/webpack-contrib/css-loader):
 
 ```js
-import 'reset-css';
+import 'css-init';
 ```
 
 ## 💣 Testing
