@@ -86,7 +86,7 @@ $ yarn add css-init
 
 ## 🛠 Usage
 
-> 📝 **NOTE:** replace "..node-modules" below with the path to your `/node_modules/` directory, or in your desired location.
+> 📝 **NOTE:** Replace "..node-modules" below with the path to your `/node_modules/` directory, or in your desired location.
 
 HTML:
 
@@ -114,9 +114,9 @@ import 'css-init';
 
 ## 💣 Testing
 
-There is an included `tags.html` file intended to act as an example page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across the different browsers.
+There is an included `elements.html` file intended to act as an example page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across the different browsers.
 
-> **🚨NOTE:** this file is NOT meant to be accessible (hypocritical, I know...); but it's NOT meant to be a styleguide, rather just a page to view the elements (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌).
+> **🚨NOTE:** This file is **not** meant to be accessible in its current state, and is also **not** meant to be a styleguide; rather, it is just a page that houses all of the reset elements in a very non-semantic fashion for viewing/testing. (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌).
 
 ## 👥 GitHub
 

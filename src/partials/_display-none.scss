@@ -4,9 +4,12 @@
 // `datalist` element should always be hidden on-load, and made visible via interaction by browser.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 datalist,
-// Set dialog to `none` only when it doesn't have the `open` boolean attribute.
+// Set `dialog` to `none` only when it doesn't have the `open` boolean attribute.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 dialog:not([open]),
+// Set `rp` to `none` as it is used to wrap hidden parantheses on fallback text.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp
+rp,
 // Ensure `[hidden]` attribute styles are supported (this is the default behavior).
 // 📝 Accessibility Note: it's important that these styles are supported for accessibility, and
 // elements with this boolean attribute are properly hidden (including from accessibility tree).

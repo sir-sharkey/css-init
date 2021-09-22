@@ -3,11 +3,9 @@
 /* ------------------- */
 bdi,
 mark,
-meter, // @TODO Following browser defaults, could go either way.
-progress, // @TODO Following browser defaults, could go either way.
-rp,
-rt,
-ruby,
+meter,
+output,
+progress,
 time,
  {
   // Set `display` property to `inline-block` to ensure elements are displayed at the inline level,

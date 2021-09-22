@@ -2,9 +2,9 @@
 // Support old school text styles.
 /* ------------------- */
 // Support classic styles for elements that bear semantic importance and should be used over similar
-// alternatives that do not convey any semantic meaning (the `b` and `i` tags, respectively) and
+// alternatives that do not convey any semantic meaning (the `b` and `i` elements, respectively) and
 // were historicaly used to alter how the text is displayed; modern CSS conventions prefer using
-// CSS styles to affect display instead of relying on these tags.
+// CSS styles to affect display instead of relying on these elements.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
 strong {

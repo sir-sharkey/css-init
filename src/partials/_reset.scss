@@ -122,7 +122,8 @@ progress,
 q,
 // rb, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb
-rp,
+// rp, 👻 // Doesn't render on the page, so no reason to style it.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp
 rt,
 // rtc, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc
@@ -137,7 +138,8 @@ select,
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow
 slot,
 small,
-source,
+// source, 👻 // Doesn't render on the page, so no reason to style it.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source
 // spacer, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer
 span,
@@ -170,7 +172,7 @@ video,
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
 // xmp, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
- {
+  {
   // No backgrounds, especially on pesky buttons.
   background: none;
   // No borders, most dinstinctly recognized on buttons and inputs.
@@ -196,7 +198,7 @@ video,
   // `text-decoration` is currently left out of the reset, as there are some demarcating elements
   // related to inline text semantics that become useles without it, and are generally used less
   // frequently, and restlyed even less frequently (e.g. `<abbr>, <s>, and <u>`). `text-decoration`
-  // is, however, specifically removed on links/anchor tags (`<a>`) in the `_links.scss` partial.
+  // is, however, specifically removed on links/anchor elements (`<a>`) in the `_links.scss` partial.
   // text-decoraion: none;
   // Position all elements that are positioned inline on the baseline for consistency.
   vertical-align: baseline;

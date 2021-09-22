@@ -2,7 +2,7 @@
   "author": {
     "name": "Jack Sharkey",
     "email": "jsharkey90@gmail.com",
-    "website": "http://jacksharkey.me"
+    "website": "https://github.com/sir-sharkey"
   },
   "bugs": {
     "url": "https://github.com/sir-sharkey/css-init/issues"
@@ -17,7 +17,7 @@
     "gulp-sass": "^5.0.0",
     "merge-stream": "^2.0.0",
     "postcss": "^8.3.5",
-    "sass": "^1.37.5",
+    "sass": "^1.42.0",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^5.0.0"
   },
