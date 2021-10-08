@@ -113,7 +113,7 @@ optgroup,
 option,
 output,
 p,
-param,
+// param, 👻 // Doesn't render on the page
 picture,
 // plaintext, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext
@@ -122,7 +122,7 @@ progress,
 q,
 // rb, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb
-// rp, 👻 // Doesn't render on the page, so no reason to style it.
+// rp, 👻 // Doesn't render on the page
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp
 rt,
 // rtc, ⚠️ Deprecated
@@ -130,7 +130,7 @@ rt,
 ruby,
 s,
 samp,
-// script, 👻 // Doesn't render on the page, so no reason to style it.
+// script, 👻 // Doesn't render on the page
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 section,
 select,
@@ -138,7 +138,7 @@ select,
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow
 slot,
 small,
-// source, 👻 // Doesn't render on the page, so no reason to style it.
+// source, 👻 // Doesn't render on the page
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source
 // spacer, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer
@@ -153,7 +153,7 @@ svg,
 table,
 tbody,
 td,
-// template, 👻 // Doesn't render on the page, so no reason to style it.
+// template, 👻 // Doesn't render on the page
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
 textarea,
 tfoot,
@@ -168,7 +168,7 @@ u,
 ul,
 var,
 video,
-// wbr, 👻 // Doesn't render on the page, so no reason to style it.
+// wbr, 👻 // Doesn't render on the page
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
 // xmp, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
@@ -199,7 +199,6 @@ video,
   // related to inline text semantics that become useles without it, and are generally used less
   // frequently, and restlyed even less frequently (e.g. `<abbr>, <s>, and <u>`). `text-decoration`
   // is, however, specifically removed on links/anchor elements (`<a>`) in the `_links.scss` partial.
-  // text-decoraion: none;
   // Position all elements that are positioned inline on the baseline for consistency.
   vertical-align: baseline;
 }
