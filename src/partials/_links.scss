@@ -5,8 +5,4 @@
 a {
   // Remove the default underline that shows up on links.
   text-decoration: none;
-  // Alse ensure the default underline is removed when `:hover` state is applied.
-  &:hover {
-    text-decoration: none;
-  }
 }
