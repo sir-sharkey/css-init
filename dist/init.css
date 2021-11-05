@@ -2,7 +2,6 @@ a,abbr,address,area,article,aside,audio,b,bdi,bdo,blockquote,body,br,button,canv
   background:none;
   border:none;
   color:initial;
-  font:inherit;
   font-size:100%;
   font-style:normal;
   font-weight:400;
@@ -31,7 +30,7 @@ body{
 a,button,details,label,select{
   cursor:pointer;
 }
-article,aside,audio,canvas,details,embed,figcaption,figure,footer,header,main,nav,rt,ruby,section,summary,svg,video{
+article,aside,audio,canvas,details,figcaption,figure,footer,header,main,nav,rt,ruby,section,summary{
   display:block;
 }
 bdi,mark,meter,output,progress,time{
