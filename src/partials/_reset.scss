@@ -177,10 +177,8 @@ video,
   background: none;
   // No borders, most dinstinctly recognized on buttons and inputs.
   border: none;
-  // Reset `color` to default state on all elements.
+  // Reset `color` to default/initial state on all elements.
   color: initial;
-  // Ensuring font property inherits (this is the default behavior).
-  font: inherit;
   // Resetting all elements to 100%.
   //📝 Accessibility Note: Setting `font-size` to 100% and NOT a value including
   // units is incredibly important to allow user's default font-size changes to their browser
