@@ -8,7 +8,7 @@
     "url": "https://github.com/sir-sharkey/css-init/issues"
   },
   "description": "A minimal, unopinionated, and accessible CSS reset/normalization that correctly accounts for HTML5 elements.",
-  "homepage": "https://github.com/sir-sharkey/css-init#readme",
+  "homepage": "https://sir-sharkey.github.io/css-init/",
   "keywords": [
     "accessibility",
     "accessible reset",
