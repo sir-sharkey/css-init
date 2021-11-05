@@ -55,7 +55,7 @@ last 2 versions
 
 ## 😞 Why
 
-This package was born out of years of disappointment with the evolution of standard available tools to reset or normalize your CSS before creating your own styles/theme.
+This package was born out of disappointment with the evolution of standard available tools to reset or normalize your CSS before creating your own styles/theme.
 
 After years of creating a custom `_reset.scss` partial to fully reset my own styles on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are out there... surely there has to be a minimal, unopinionated, accessible, modern alternative? And here enters my disappointment - while there are some notable newer implementations of the same idea, I couldn't find anything that ticked all the boxes above.
 
