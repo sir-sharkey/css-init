@@ -57,9 +57,7 @@ last 2 versions
 
 This package was born out of disappointment with the evolution of standard available tools to reset or normalize your CSS before creating your own styles/theme.
 
-After years of creating a custom `_reset.scss` partial to fully reset my own styles on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are out there... surely there has to be a minimal, unopinionated, accessible, modern alternative? And here enters my disappointment - while there are some notable newer implementations of the same idea, I couldn't find anything that ticked all the boxes above.
-
-So instead, I thought - why not pick and choose the best pieces of all available packages, audit what should actually be there, and create one package to tick all the above boxes.
+After years of creating a custom `_reset.scss` partial to fully reset my own styles on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are out there... surely there has to be a minimal, unopinionated, accessible, modern alternative? And here enters my disappointment - while there are some notable newer implementations of the same idea, I couldn't find anything that ticked all the above boxes. So instead, here is my best attempt at doing so.
 
 > 📝 **NOTE:** The goal of this package is to correctly reset/normalize browser-default styles, creating a near-blank-slate effect (with a few exceptions) for you to then write your own styles on top of. Once you have included these styles, you can then begin writing your own base styles on top of them; it does NOT create a base or default set of styles for you to immediately begin authoring content with - this is left up to you. Happy styling!
 

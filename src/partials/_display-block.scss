@@ -7,7 +7,7 @@ aside,
 audio,
 canvas,
 details,
-// embed, already included in `_multimedia.scss` partial
+// embed, ⚠️ already included in `_multimedia.scss` partial
 figcaption,
 figure,
 footer,
@@ -18,8 +18,8 @@ rt,
 ruby,
 section,
 summary {
-// svg, already included in `_multimedia.scss` partial
-// video, already included in `_multimedia.scss` partial
+// svg, ⚠️ already included in `_multimedia.scss` partial
+// video, ⚠️ already included in `_multimedia.scss` partial
   // Ensure elements are displayed at the block level, thus making them easily distinguished
   // within the DOM flow and easily positioned.
   display: block;
