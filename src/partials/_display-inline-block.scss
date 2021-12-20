@@ -6,8 +6,7 @@ mark,
 meter,
 output,
 progress,
-time,
- {
+time {
   // Set `display` property to `inline-block` to ensure elements are displayed at the inline level,
   // thus making them flow with inline/text content while also have positioning capabilities.
   display: inline-block;

@@ -2,36 +2,47 @@
 // expected behavior in font-styles and spacing of all elements.
 @import 'partials/reset';
 
-
 // Remove default appearance styles on buttons and selects.
 @import 'partials/appearance';
+
 // Set crucial styles on `body` element that will be inherited by contents.
 @import 'partials/body';
+
 // // Set `box-sizing` to `border-box` on all elements, including pseudo elements.
 @import 'partials/box-sizing';
+
 // Ensure interactive elements have a pointer cursor on hover.
 @import 'partials/cursor';
+
 // Set default display value to `block` on block-level/non-inline HTML5 elements for older browser
 // support.
 @import 'partials/display-block';
+
 // Set default display value to `inline-block` on inline HTML5 elements for older browser support.
 @import 'partials/display-inline-block';
+
 // Ensure elements that should be hidden on-load have `display` property set to `none`.
 // 📝 Accessibility Note: `display-none` MUST be included after `display-block` and
 // `display-inline-block` to ensure that the `[hidden]` attribute styles are honored.
 @import 'partials/display-none';
+
 // Ensure links do not have a underline on-load or on-hover, as links are used to wrap flow content
 // as well as phrasing content.
 @import 'partials/links';
+
 // Remove default list styles.
 @import 'partials/lists';
+
 // Set the display and max-width for image/multimedia and embedded content elements to place items
 // on a new line and prevent side-scroll.
 @import 'partials/multimedia';
+
 // Remove default quote styles.
 @import 'partials/quotes';
+
 // Support old school text styles.
 // @TODO This one is up for debate, let's see what the people say...
 @import 'partials/restyle';
+
 // Reset default table styles.
 @import 'partials/tables';

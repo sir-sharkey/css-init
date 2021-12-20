@@ -5,11 +5,14 @@ body {
   // "Use a minimum value of 1.5 for line-height for main paragraph content."
   // https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns
   line-height: 1.5;
+
   // Ensure body stretches full height of window.
   min-height: 100vh;
+
   // Prevent smartphone and tablet devices adjusting text size.
   // https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
   text-size-adjust: none;
+
   // Ensure body stretches full width of window.
   width: 100%;
 }

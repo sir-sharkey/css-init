@@ -167,32 +167,39 @@ track,
 u,
 ul,
 var,
-video,
-// wbr, 👻 // Doesn't render on the page
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
-// xmp, ⚠️ Deprecated
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
-  {
+video {
+  // wbr, 👻 // Doesn't render on the page
+  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+  // xmp, ⚠️ Deprecated
+  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
   // No backgrounds, especially on pesky buttons.
   background: none;
+
   // No borders, most dinstinctly recognized on buttons and inputs.
   border: none;
+
   // Reset `color` to default/initial state on all elements.
   color: initial;
+
   // Resetting all elements to 100%.
-  //📝 Accessibility Note: Setting `font-size` to 100% and NOT a value including
+  // 📝 Accessibility Note: Setting `font-size` to 100% and NOT a value including
   // units is incredibly important to allow user's default font-size changes to their browser
   // preferences to be honored; additionally, it is recommended to use `rem` values in your
   // authored styles to support zooming correctly.
   font-size: 100%;
+
   // Reset `font-style` to normal on all elements.
   font-style: normal;
+
   // Reset `font-weight` to normal on all elements.
   font-weight: normal;
+
   // Remove `margin` on all elements.
   margin: 0;
+
   // Remove `padding` on all elements.
   padding: 0;
+
   // `text-decoration` is currently left out of the reset, as there are some demarcating elements
   // related to inline text semantics that become useles without it, and are generally used less
   // frequently, and restlyed even less frequently (e.g. `<abbr>, <s>, and <u>`). `text-decoration`

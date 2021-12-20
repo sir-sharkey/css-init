@@ -12,10 +12,12 @@ video {
   // Set `display` property to `block` to ensure elements display at the block level and don't
   // appear within the text/inline flow; this makes them easier to position.
   display: block;
+
   // Set `height` property to `auto` so that the height auto-adjusts with the `width` property;
   // this ensures the dimensions are retained as the image is stretched, or constrained (e.g. with
   // the `max-width` style below).
   height: auto;
+
   // `Set the `max-width` property to `100%` to ensure that elements do not stretch beyond the
   // width of the page, and do not cause unintended side-scrolling.
   max-width: 100%;
