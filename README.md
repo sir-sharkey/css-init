@@ -104,7 +104,7 @@ import 'css-init';
 
 ## 💣 Testing
 
->There is an included `elements.html` file that acts as an example page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across the different browsers.
+>There is an included `elements.html` file that acts as an example/test page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded.
 
 ## 👥 GitHub
 
