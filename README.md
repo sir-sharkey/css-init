@@ -42,7 +42,7 @@
 
 ## 🏗 Browser Support
 
->The styles in this project are compiled using rules that support the last 2 versions, and any version with coverage greater than 1%, of all modern browsers supported by [Browserslist](https://github.com/browserslist/browserslist).
+The styles in this project are compiled using rules that support the last 2 versions, and any version with coverage greater than 1%, of all modern browsers supported by [Browserslist](https://github.com/browserslist/browserslist).
 
 ```text
 > 1%
@@ -51,7 +51,7 @@ last 2 versions
 
 ## 😞 Why
 
-> After years of creating my own custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be an accessible, minimal, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So instead, here is my best attempt at doing so.
+After years of creating my own custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be an accessible, minimal, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So instead, here is my best attempt at doing so.
 
 ## ⤵️ Install
 
@@ -104,7 +104,7 @@ import 'css-init';
 
 ## 💣 Testing
 
->There is an included `elements.html` file that acts as an example/test page. You can load this file locally in any browser to see how all HTML elements look across your different browsers after the `css-init` styles are loaded.
+There is an included `elements.html` file that acts as an example/test page. You can load this file locally in any browser to see how all HTML elements look across your different browsers after the `css-init` styles are loaded.
 
 ## 👥 GitHub
 
