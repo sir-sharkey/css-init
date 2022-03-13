@@ -159,13 +159,14 @@
 // ul, ✅
 // var, ✅
 // video ✅
+// wbr, 👻 // Doesn't render on the page
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+// xmp, ⚠️ Deprecated
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
+
 *,
 *::before,
 *::after {
-  // wbr, 👻 // Doesn't render on the page
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
-  // xmp, ⚠️ Deprecated
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
   // No backgrounds, especially on pesky buttons.
   background: none;
 
@@ -194,7 +195,7 @@
   // Remove `padding` on all elements.
   padding: 0;
 
-  // `text-decoration` is currently left out of the reset, as there are some demarcating elements
+  // 📝`text-decoration` is currently left out of the reset, as there are some demarcating elements
   // related to inline text semantics that become useles without it, and are generally used less
   // frequently, and restlyed even less frequently (e.g. `<abbr>, <s>, and <u>`). `text-decoration`
   // is, however, specifically removed on links/anchor elements (`<a>`) in the `_links.scss` partial.
