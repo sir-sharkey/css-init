@@ -1,44 +1,40 @@
 # css-init
 
-# A modern CSS reset/normalization.
+# A modern CSS reset.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/css-init)
 [![npm](https://img.shields.io/npm/dw/css-init)](https://www.npmjs.com/package/css-init)
 
-A minimal, unopinionated, and accessible CSS reset/normalization that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+> A minimal, accessible, and unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 ## ⚙️ Features
 
 ### 👌 Minimal
 
-- No extraneous, superfluous, or legacy styles; nothing included without an explanation or a reason.
-- Legacy conventions in other resets and normalizations audited and edited/removed.
-- Deprecated elements removed.
+- No extra styles; nothing included without an explanation or reason.
+- Legacy conventions copied from other resets and normalizations are audited.
 - Main file is minified.
-
-### 🤫 Unopinionated
-
-- The included rules are only intended to reset the styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), **NOT** to also add a layer of opinionated, default styles on top of the reset.
-- These styles are meant to have a near-blank-slate effect.
-  - 📝 **NOTE:** There are a few exceptions included that are restyled after resetting all elements.
-- Meant to be used by developers in projects where themes/default styles are being added on top of the reset.
-- Avoids necessitating an additional complementary stylesheet in order to remove opinionated styles added after using other popular legacy resets and normalizations.
 
 ### ♿️ Accessible
 
-- Does not tamper with the natural accessibility of semantic HTML in an unaltered state.
+- Does not tamper with the natural accessibility of semantic HTML.
 - Does not remove, or mess with in any way, the default focus state styles!
   - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline styles without creating a custom one to override it.
 - Sets `font-size` to `100%` and includes a note on why this is important.
 - Sets default `line-height` on `body` and includes a note (and [link](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns)) on why this is important.
 - Ensures that `[hidden]` attribute styles are honored.
-- Ensures that elements that are hidden are done so using `display: none`, as this also removes them from the accessibility tree.
-- Does not hamper a user's ability to zoom.
+- Correctly hides elements using `display: none`, as this also removes them from the accessibility tree.
+- Does not prevent a user from zooming.
+
+### 🤫 Unopinionated
+
+- Intended to reset the styles for all [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), **NOT** to add a layer of opinionated/default styles.
+- Meant to have a near-blank-slate effect.
+  - 📝 **NOTE:** There are a few exceptions included that are restyled after resetting all elements.
 
 ### 📱 Modern
 
-- Includes styles for all appropriate [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), including elements left out in other popular resets and normalizations.
 - Correctly resets new HTML5 elements for custom styling, like `<button>` and `<select>`.
 - Correctly styles multimedia elements to reduce the likelihood of unintended side-scroll.
 - Ensures a `pointer` cursor shows on all appropriate interactive elements.
@@ -46,7 +42,7 @@ A minimal, unopinionated, and accessible CSS reset/normalization that correctly 
 
 ## 🏗 Browser Support
 
-The styles in this project are compiled using rules that support the last 2 versions, and any version with coverage greater than 1%, of all modern browsers supported by [Browserslist](https://github.com/browserslist/browserslist).
+>The styles in this project are compiled using rules that support the last 2 versions, and any version with coverage greater than 1%, of all modern browsers supported by [Browserslist](https://github.com/browserslist/browserslist).
 
 ```text
 > 1%
@@ -55,11 +51,7 @@ last 2 versions
 
 ## 😞 Why
 
-This package was born out of disappointment with the evolution of standard available tools to reset or normalize your CSS before creating your own styles/theme.
-
-After years of creating a custom `_reset.scss` partial to fully reset my own styles on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are out there... surely there has to be a minimal, unopinionated, accessible, modern alternative? And here enters my disappointment - while there are some notable newer implementations of the same idea, I couldn't find anything that ticked all the above boxes. So instead, here is my best attempt at doing so.
-
-> 📝 **NOTE:** The goal of this package is to correctly reset/normalize browser-default styles, creating a near-blank-slate effect (with a few exceptions) for you to then write your own styles on top of. Once you have included these styles, you can then begin writing your own base styles on top of them; it does NOT create a base or default set of styles for you to immediately begin authoring content with - this is left up to you. Happy styling!
+> After years of creating my own custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) or [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be an accessible, minimal, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So instead, here is my best attempt at doing so.
 
 ## ⤵️ Install
 
@@ -112,9 +104,7 @@ import 'css-init';
 
 ## 💣 Testing
 
-There is an included `elements.html` file intended to act as an example page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across the different browsers.
-
-> **🚨NOTE:** This file is **not** meant to be accessible in its current state, and is also **not** meant to be a styleguide; rather, it is just a page that houses all of the reset elements in a very non-semantic fashion for viewing/testing. (_styleguide and end-to-end testing with [Cypress](https://www.cypress.io/) coming soon!_ 🙌).
+>There is an included `elements.html` file that acts as an example page. You can load this file locally in any browser to see how all included elements look in the different browsers after the `css-init` styles are loaded; you will be able to note the differences in browser default styles, while also noting the consistency in the styles that are reset across the different browsers.
 
 ## 👥 GitHub
 
@@ -122,7 +112,7 @@ There is an included `elements.html` file intended to act as an example page. Yo
 
 ## ✏️ Contributing
 
-This project is open-source, and can only get better the more people use it and contribute to it (code contributions and issues/bugs/ideas are both encouraged).
+This project is open-source, and can only get better the more people use it and contribute to it (code contributions and issues/bugs/ideas are all encouraged).
 
 > ❤️ Feedback is welcome!
 

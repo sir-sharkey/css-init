@@ -8,6 +8,7 @@
   ],
   "rules": {
     "comment-empty-line-before": null,
+    "scss/double-slash-comment-empty-line-before": null,
     "string-quotes": "single"
   },
   "plugins": [
