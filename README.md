@@ -1,26 +1,24 @@
 # css-init
 
-# A modern CSS reset.
+## A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/css-init)
 [![npm](https://img.shields.io/npm/dw/css-init)](https://www.npmjs.com/package/css-init)
 
-> A minimal, accessible, and unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
 ## ⚙️ Features
 
 ### 👌 Minimal
 
-- No extra styles; nothing included without an explanation or reason.
-- Legacy conventions copied from other resets and normalizations are audited.
+- No extra styles; nothing is included without an explanation or reason.
+- Code copied from other resets and normalizations is audited.
 - Main file is minified.
 
 ### ♿️ Accessible
 
 - Does not tamper with the natural accessibility of semantic HTML.
-- Does not remove, or mess with in any way, the default focus state styles!
-  - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline styles without creating a custom one to override it.
+- Does not remove, or mess with in any way, the default focus state styles.
+  - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline styles without creating a custom one to override it!
 - Sets `font-size` to `100%` and includes a note on why this is important.
 - Sets default `line-height` on `body` and includes a note (and [link](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns)) on why this is important.
 - Ensures that `[hidden]` attribute styles are honored.

@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/sir-sharkey/css-init/issues"
   },
-  "description": "A minimal, unopinionated, and accessible CSS reset/normalization that correctly accounts for HTML5 elements.",
+  "description": "♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for HTML5 elements.",
   "homepage": "https://sir-sharkey.github.io/css-init/",
   "keywords": [
     "accessibility",
@@ -17,7 +17,6 @@
     "css init",
     "css reset",
     "css",
-    "modern css normalize",
     "modern css reset",
     "normalize",
     "reset",
