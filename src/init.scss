@@ -19,7 +19,7 @@
 @import 'partials/display-inline-block';
 
 // Ensure elements that should be hidden on-load have `display` property set to `none`.
-// 📝 Accessibility Note: `display-none` MUST be included after `display-block` and
+// ♿️ Accessibility Note: `display-none` MUST be included after `display-block` and
 // `display-inline-block` to ensure that the `[hidden]` attribute styles are honored.
 @import 'partials/display-none';
 

@@ -11,7 +11,7 @@ dialog:not([open]),
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp
 rp,
 // Ensure `[hidden]` attribute styles are supported (this is the default behavior).
-// 📝 Accessibility Note: it's important that these styles are supported for accessibility, and
+// ♿️ Accessibility Note: it's important that these styles are supported for accessibility, and
 // elements with this boolean attribute are properly hidden (including from accessibility tree).
 *[hidden] {
   // Ensure elements are properly hidden (including from accessibility tree).
