@@ -1,6 +1,6 @@
 # css-init
 
-## A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+## ♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/css-init)
