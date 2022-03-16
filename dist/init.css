@@ -1,6 +1,8 @@
 *,:after,:before{
   background:none;
   border:none;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
   color:initial;
   font-size:100%;
   font-style:normal;
@@ -23,11 +25,7 @@ body{
   min-height:100vh;
   width:100%;
 }
-*,:after,:before{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-}
-a,button,details,label,select{
+a,button,details,input[type=button],input[type=checkbox],input[type=file],input[type=image],input[type=radio],input[type=range],input[type=reset],input[type=submit],label,select{
   cursor:pointer;
 }
 article,aside,audio,canvas,details,figcaption,figure,footer,header,main,nav,rt,ruby,section,summary{
