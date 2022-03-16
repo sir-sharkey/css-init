@@ -1,9 +1,0 @@
-/* ------------------- */
-// Set `box-sizing` to `border-box` on all elements, including pseudo elements.
-/* ------------------- */
-*,
-*::before,
-*::after {
-  // Set the `box-sizing` property to `border-box` for easier positioning/spacing.
-  box-sizing: border-box;
-}

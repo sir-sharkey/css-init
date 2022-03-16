@@ -1,12 +1,20 @@
 /* ------------------- */
-// Ensure interactive elements have a pointer cursor on hover.
+// Add a pointer cursor to non-input interactive elements, labels, and some input types on hover.
 /* ------------------- */
 a,
 button,
 details,
+input[type='button'],
+input[type='checkbox'],
+input[type='file'],
+input[type='image'],
+input[type='radio'],
+input[type='range'],
+input[type='reset'],
+input[type='submit'],
 label,
 select {
-  // Set the `cursor` property to a `pointer` (hand with finger pointed) on all clickable,
-  // interactive elements.
+  // Set the `cursor` property to a `pointer` (hand with finger pointed) on interactive elements
+  // that are generally associated with clicking vs text input.
   cursor: pointer;
 }

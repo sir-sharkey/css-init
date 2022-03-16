@@ -8,9 +8,6 @@
 // Set crucial styles on `body` element that will be inherited by contents.
 @import 'partials/body';
 
-// // Set `box-sizing` to `border-box` on all elements, including pseudo elements.
-@import 'partials/box-sizing';
-
 // Ensure interactive elements have a pointer cursor on hover.
 @import 'partials/cursor';
 
