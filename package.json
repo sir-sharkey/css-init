@@ -10,6 +10,7 @@
   "description": "♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for HTML5 elements.",
   "homepage": "https://sir-sharkey.github.io/css-init/",
   "keywords": [
+    "a11y",
     "accessibility",
     "accessible reset",
     "accessible",
@@ -35,18 +36,18 @@
   },
   "version": "1.2.6",
   "devDependencies": {
-    "autoprefixer": "10.4.2",
-    "cssnano": "5.1.3",
+    "autoprefixer": "10.4.4",
+    "cssnano": "5.1.5",
     "gulp": "4.0.2",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "2.0.0",
     "gulp-sass": "5.1.0",
     "merge-stream": "2.0.0",
-    "postcss": "8.4.8",
+    "postcss": "8.4.12",
     "postcss-scss": "4.0.3",
     "sass": "1.49.9",
-    "stylelint": "14.5.3",
+    "stylelint": "14.6.0",
     "stylelint-config-standard-scss": "3.0.0",
-    "stylelint-scss": "4.1.0"
+    "stylelint-scss": "4.2.0"
   }
 }
