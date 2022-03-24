@@ -10,9 +10,9 @@
 
 ### 👌 Minimal
 
-- No extra styles; nothing is included without an explanation or reason.
+- No unnecessary styles; nothing is included without an explanation or reason.
 - Code copied from other resets and normalizations is audited.
-- Main file is minified.
+- Main file is minified; only 1.2kb total size uncompressed.
 
 ### ♿️ Accessible
 
