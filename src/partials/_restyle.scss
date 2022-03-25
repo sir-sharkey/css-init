@@ -36,6 +36,8 @@ sup {
 
 // Re-add size reduction using `font-size` property, as this is a less-arbirtrary value and
 // corresponds with the name of the element.
+// 📝 Note: an opposing element `big` does exist, but is deprecated and therefore not included here.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big
 small {
   font-size: small;
 }
