@@ -274,6 +274,7 @@
 // xmp, ⚠️ Deprecated
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp
 
+// Using asterisk ("all") selector versus specific elements for performance.
 *,
 *::before,
 *::after {
