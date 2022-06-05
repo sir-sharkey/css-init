@@ -36,18 +36,20 @@
   },
   "version": "1.2.8",
   "devDependencies": {
-    "autoprefixer": "10.4.4",
-    "cssnano": "5.1.7",
+    "autoprefixer": "10.4.7",
+    "cssnano": "5.1.11",
+    "eslint": "8.17.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0",
     "gulp": "4.0.2",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "2.0.0",
     "gulp-sass": "5.1.0",
-    "merge-stream": "2.0.0",
-    "postcss": "8.4.12",
-    "postcss-scss": "4.0.3",
-    "sass": "1.49.11",
-    "stylelint": "14.6.1",
-    "stylelint-config-standard-scss": "3.0.0",
+    "postcss": "8.4.14",
+    "postcss-scss": "4.0.4",
+    "sass": "1.52.2",
+    "stylelint": "14.8.5",
+    "stylelint-config-standard-scss": "4.0.0",
     "stylelint-scss": "4.2.0"
   }
 }
