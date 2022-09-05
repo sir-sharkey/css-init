@@ -1,4 +1,4 @@
-![css-init](https://github.com/sir-sharkey/css-init/blob/main/css-init.png)
+![css-init logo](https://raw.githubusercontent.com/sir-sharkey/css-init/main/css-init.png)
 
 ## ♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
