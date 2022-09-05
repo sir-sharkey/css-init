@@ -1,4 +1,4 @@
-# css-init
+![css-init](https://github.com/sir-sharkey/css-init/blob/main/css-init.png)
 
 ## ♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
@@ -10,15 +10,15 @@
 
 ### 👌 Minimal
 
-- No unnecessary styles; nothing is included without an explanation or reason.
-- Code copied from other resets and normalizations is audited.
+- No superfluous or redundant styles; nothing is included without an explanation or reason.
+- Code copied from other resets and browser default stylesheets is audited.
 - Main file is minified; only 1.2kb total size uncompressed.
 
 ### ♿️ Accessible
 
 - Does not tamper with the natural accessibility of semantic HTML.
-- Does not remove, or mess with in any way, the default focus state styles.
-  - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline without creating a custom one to override it!
+- Does not remove, or edit in any way, default browser focus state styles.
+  - ⚠️ You should _never_ remove/hide/suppress the default `:focus` outline without adding custom styles in place of it!
 - Sets `font-size` to `100%` and includes a note on why this is important.
 - Sets default `line-height` on `body` and includes a note (and [link](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns)) on why this is important.
 - Ensures that `[hidden]` attribute styles are honored.
@@ -49,7 +49,7 @@ last 2 versions
 
 ## 😞 Why
 
-After years of creating a custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) and [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be an accessible, minimal, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So here is my best attempt at doing so.
+After years of creating a custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) and [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be a minimal, accessible, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So here is my best attempt at creating a package that does so.
 
 ## ⤵️ Install
 
