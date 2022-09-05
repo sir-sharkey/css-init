@@ -3,8 +3,8 @@
 ## ♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/css-init)
-[![npm](https://img.shields.io/npm/dw/css-init)](https://www.npmjs.com/package/css-init)
+[![npm version](https://img.shields.io/npm/v/css-init)](https://www.npmjs.com/package/css-init)
+[![npm weekly downloads](https://img.shields.io/npm/dw/css-init)](https://www.npmjs.com/package/css-init)
 
 ## ⚙️ Features
 
@@ -53,7 +53,7 @@ After years of creating a custom `_reset.scss` file on top of [Reset CSS](https:
 
 ## ⤵️ Install
 
-[![NPM](https://nodei.co/npm/css-init.png?compact=true)](https://nodei.co/npm/css-init/)
+[![css-init NPM package](https://nodei.co/npm/css-init.png?compact=true)](https://nodei.co/npm/css-init/)
 
 With [NPM](http://npmjs.com):
 
@@ -69,8 +69,8 @@ $ yarn add css-init
 
 ### Download
 
-- [Expanded](https://github.com/sir-sharkey/css-init/blob/main/dist/init.css)
-- [Minified](https://github.com/sir-sharkey/css-init/blob/main/dist/init.min.css)
+- [Expanded css stylesheet](https://github.com/sir-sharkey/css-init/blob/main/dist/init.css)
+- [Minified css stylesheet](https://github.com/sir-sharkey/css-init/blob/main/dist/init.min.css)
 
 ## 🛠 Usage
 
