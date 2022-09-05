@@ -49,7 +49,7 @@ last 2 versions
 
 ## 😞 Why
 
-After years of creating a custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) and [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be a minimal, accessible, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So here is my best attempt at creating a package that does so.
+After years of creating a custom `_reset.scss` file on top of [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) and [Normalize](https://necolas.github.io/normalize.css/), I decided to research what other options are available... surely there has to be a minimal, accessible, unopinionated, modern alternative? And here enters my disappointment - while there are some notable newer options, I couldn't find anything that ticked all the above boxes. So here is my best attempt at creating a stylesheet that does so.
 
 ## ⤵️ Install
 
