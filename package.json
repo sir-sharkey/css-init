@@ -34,7 +34,7 @@
   "scripts": {
     "build": "gulp css"
   },
-  "version": "1.2.9",
+  "version": "1.2.10",
   "devDependencies": {
     "autoprefixer": "10.4.8",
     "cssnano": "5.1.13",
