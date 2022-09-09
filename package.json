@@ -8,7 +8,7 @@
     "url": "https://github.com/sir-sharkey/css-init/issues"
   },
   "description": "♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for HTML5 elements.",
-  "homepage": "https://sir-sharkey.github.io/css-init/",
+  "homepage": "https://css-init.com/",
   "keywords": [
     "a11y",
     "accessibility",
@@ -47,7 +47,7 @@
     "gulp-sass": "5.1.0",
     "postcss": "8.4.16",
     "postcss-scss": "4.0.4",
-    "sass": "1.54.8",
+    "sass": "1.54.9",
     "stylelint": "14.11.0",
     "stylelint-config-standard-scss": "5.0.0",
     "stylelint-scss": "4.3.0"
