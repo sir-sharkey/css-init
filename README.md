@@ -1,4 +1,4 @@
-![css-init logo](https://raw.githubusercontent.com/sir-sharkey/css-init/main/css-init.png)
+# ![css-init](https://raw.githubusercontent.com/sir-sharkey/css-init/main/css-init.png)
 
 ## ♿️ A minimal, accessible, & unopinionated CSS reset that correctly accounts for [HTML5 elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
@@ -10,7 +10,7 @@
 
 ### 👌 Minimal
 
-- No superfluous or redundant styles; nothing is included without an explanation or reason.
+- No superfluous or redundant styles; nothing is included without an explanation in comments.
 - Code copied from other resets and browser default stylesheets is audited.
 - Main file is minified; only 1.2kb total size uncompressed.
 
@@ -102,7 +102,7 @@ import 'css-init';
 
 ## 💣 Testing
 
-There is an included `elements.html` file that acts as an example/test page. You can load this file locally in any browser to see how all HTML elements will look after the `css-init` styles are loaded.
+There is an included [`elements.html`](https://css-init.com/elements.html) file that acts as an example/test page. You can load this file locally in any browser to see how all HTML elements will look after the `css-init` styles are loaded.
 
 ## 👥 GitHub
 
